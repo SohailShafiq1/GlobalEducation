@@ -1,0 +1,161 @@
+.subcontainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.counsellor{
+    padding: 70px 150px;
+    background-color: #F4F3EE;
+
+}
+.img2 img{
+    height: 300px;
+    width: 300px;
+}
+.subcontainer .data{
+    margin-right: 50px;
+}
+.img2{
+    margin-top: 50px;
+}
+.counsellor h4{
+    color: #3f698d;
+    font-size: 20px;
+    margin: 0;
+}
+.counsellor p{
+    font-size: 16px;
+    margin: 0;
+    color: #313130 ;
+}
+.counsellor .steps{
+    margin-top: 30px;
+    padding-right: 200px;
+}
+.counsellor .text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.counsellor .text h1{
+    font-size: 45px;
+    margin: 0;
+}
+.counsellor .text p{
+    font-size: 16px;
+    color: #313130 ;
+
+}
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 80px;
+}
+.experts img{
+    height: 250px;
+    width: 250px;
+}
+.experts .data{
+    width: 55%;
+}
+.experts .data p{
+    padding-right: 15px;
+}
+.experts .data h1{
+    font-size: 45px;
+}
+.experts .img3{
+    margin-top: 20px;
+}
+.experts .data p{
+    font-size: 16px;
+    color: #313130 ;
+
+
+}
+
+@media (max-width: 1250px){
+    .counsellor .steps{
+        padding-right: 150px;
+    }
+
+}
+@media (max-width: 1140px){
+    .counsellor .steps{
+        padding-right: 100px;
+    }
+    .counsellor{
+        padding: 70px 100px;
+    }
+
+}
+@media (max-width: 1050px){
+    .counsellor .steps{
+        padding-right: 30px;
+    }
+    .experts{
+        padding: 40px 50px;
+    }
+
+}
+@media (max-width: 900px){
+    .counsellor .subcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .subcontainer .data{
+        margin-right: 0px;
+    }
+    .counsellor .text{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .img2{
+        display: none;
+    }
+    .experts{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .experts .data{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        }    
+    .experts .img3{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
+@media (max-width: 550px){
+    .counsellor{
+        padding: 70px 40px;
+    }
+    .experts{
+        padding: 40px 40px;
+    }
+}
+@media (max-width: 400px){
+    .counsellor{
+        padding: 70px 20px;
+    }
+    .counsellor .text h1{
+        font-size: 35px;
+    }
+    .counsellor h4{
+        font-size: 30px;
+    }
+    .experts .data h1{
+        font-size: 35px;
+    }
+    .experts .data p{
+        padding-right: 0px;
+    }
+    .experts{
+        padding: 40px 20px;
+    }
+}

@@ -1,0 +1,142 @@
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F3EE ;
+    padding-top: 100px;
+}
+.left
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.right
+{
+    width: 48%;
+}
+.future
+{
+    width: 80%;
+}
+.get-started-btn
+{
+    width: 40%;
+    height: 20%;
+    margin-top: 30px;
+}
+.get-started-btn button
+{
+    width: 210px;
+    height: 45px;
+    background-color: #3f698d;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+.get-started-btn button:hover
+{
+    background-color: white;
+    color: black;
+}
+.future h1
+{
+    font-size: 75px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.future p
+{
+    font-size: 15px;
+}
+.right img
+{  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn 
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (max-width: 900px){
+    .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.left
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.get-started-btn
+{
+    width: 100%;
+    height: 25%;
+    margin-left: 0%;
+
+}
+.right
+{
+    width: 60%;
+    height: 100%;
+}
+}
+@media (max-width: 800px){
+    .right{
+    width: 80%;
+    height: 100%;
+}
+}
+@media (max-width: 610px){
+    .get-started-btn{
+    width: 100%;
+    height: 25%;
+    margin-left: 0%;
+}
+.future h1
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+}
+@media (max-width: 440px){
+    .get-started-btn{
+    width: 100%;
+    height: 25%;
+    margin-left: 0%;
+    top: 80px;
+}
+}
+@media (max-width: 440px){
+    .get-started-btn{
+    width: 100%;
+    height: 25%;
+    margin-left: 0%;
+    top: 83px;
+}
+}
+@media (max-width: 350px){
+    .get-started-btn{
+    width: 100%;
+    height: 25%;
+    margin-left: 0%;
+    top: 90px;
+}
+}

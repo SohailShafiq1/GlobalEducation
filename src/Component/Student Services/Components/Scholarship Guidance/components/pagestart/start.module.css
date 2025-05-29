@@ -1,0 +1,146 @@
+.subcontainer1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background: #F4F3EE ;
+    padding: 0px 50px;
+    flex-direction: row;
+}
+.subcontainer1 img{
+  padding-right: 45px;
+  height: 400px;
+  width: 300px;
+}
+.subcontainer1 .text{
+  padding: 0 50px; 
+  font-size: 50px;
+  text-align: center;
+}
+.subcontainer1 h1{
+    font-size: 60px;
+  }
+.subcontainer1 h4{
+    font-size: 18px;
+    text-align: center;
+    color: #313130  ;
+  }
+  .subcontainer2 .subul{
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px; 
+    margin: 0;
+    color: #313130  ;
+
+}
+
+.subcontainer2 .subul li {
+    display: list-item;
+    list-style-type: disc;
+    margin-bottom: 10px;
+    padding: 0;
+    color: #313130  ;
+    font-size: 16px;
+} 
+.subcontainer2 .subul li:hover{
+    background-color: none;
+} 
+.subcontainer2{
+  padding: 50px 130px;
+}
+.subcontainer2 h2{
+  font-size: 45px;
+}
+.subcontainer2 p{
+  font-size: 16px;
+  color: #313130  ;
+
+}
+.subcontainer2 ul li:hover 
+{
+    background-color: #ffffff;
+}
+
+@media (max-width: 1220px) {
+  .subcontainer1 .text{
+    padding: 0 25px;
+  }
+}
+@media (max-width: 1136px) {
+  .subcontainer1 .text{
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1060px) {
+  .subcontainer1 .text{
+    padding: 0 ;
+  }
+}
+@media (max-width: 990px) {
+
+  .subcontainer2 h2{
+    font-size: 45px;
+    text-align: center;
+  }
+  .subcontainer2{
+    padding: 20px 100px;
+  }
+  .subcontainer2 p{
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  .subcontainer1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+  }
+  .subcontainer1 h1{
+    text-align: center;
+  }
+  .subcontainer2 h2{
+    font-size: 45px;
+    text-align: center;
+  }
+  .subcontainer1 img{
+    display: none;
+  }
+  
+}
+
+@media (max-width: 600px){
+  .subcontainer1 img{
+    height: 300px;
+    width: 370px;
+    padding-right: 20px;
+
+  }
+  .subcontainer2{
+    padding: 20px 60px;
+  }
+}
+@media (max-width: 400px){
+  .subcontainer1 img{
+    height: 250px;
+    width: 290px;
+    padding-right: 0px;
+
+  }
+  .subcontainer1{
+    padding: 50px 20px;
+  }
+  .subcontainer2{
+    padding: 20px 20px;
+  }
+  .subcontainer1 h1{
+    font-size: 45px;
+
+  }
+  .subcontainer2 h2{
+    font-size: 35px;
+
+  }
+  .subcontainer1 h4{
+    font-size: 19px;
+
+  }
+}

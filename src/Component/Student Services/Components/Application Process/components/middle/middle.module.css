@@ -1,0 +1,176 @@
+.maincontainer p{
+    color: #313130 ;
+}
+/*container1*/
+.container1{
+    display: flex;
+    padding: 50px;
+    background-color: rgba(228, 227, 227, 0.493);
+
+}
+.container1 .imgs img{
+    height: 400px;
+    width: 450px;
+}
+.container1 .text{
+    width: 60%;
+    padding: 10px 100px;
+}
+.container1 .text h2{
+    font-size: 45px;
+    padding: 0 20px;
+    text-align: center;
+}
+.container1 .text p{
+    font-size: 16px;
+}
+
+/*container2*/
+.container2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px;
+}
+.container2 .imgs img{
+    height: 400px;
+    width: 450px;
+}
+.container2 .text{
+    width: 50%;
+    padding: 10px 80px;
+}
+.container2 .text h2{
+    font-size: 45px;
+}
+.container2 .text p{
+    font-size: 16px;
+    margin: 0;
+}
+
+.container2 .text .textul{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding-left: 0px;
+    margin: 0;
+    
+}
+.container2 .text li{
+    padding: 3px 0;
+    margin-left: 20px;
+    display: list-item;
+    list-style: disc;
+    font-size: 16px;
+
+}
+
+@media (max-width: 1270px){
+    .container1 .text{
+        padding: 10px 90px;
+    }
+}
+@media (max-width: 1120px){
+    .container1 .text{
+        padding: 10px 20px;
+    }
+    .container2 .text{
+        width: 60%;
+        padding: 10px 60px;
+    }
+    .container2 .text{
+        width: 50%;
+        padding: 10px 00px;
+    }
+}
+@media (max-width: 900px){
+    .container1 {
+        flex-direction: column;
+        justify-content: center;
+        }
+    .container1 .text{
+        padding: 10px 30px;
+        width: 90%;
+    }
+    .container1 .imgs{
+        display: flex;
+        justify-content: center;
+    }
+    .container2 {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        }
+    .container2 .text{
+        padding: 10px 50px;
+        width: 90%;
+    }
+    .container2 .imgs{
+        display: flex;
+        justify-content: center;
+    }
+    .container2 .text h2{
+        text-align: center;
+    }
+    .container1 .text h2{
+        padding: 0;
+    }
+
+}
+@media (max-width: 600px){
+    .container1 .text{
+        padding: 10px 30px;
+        width: 90%;
+    }
+    .container2 .text{
+        padding: 10px 10px;
+    }
+    .container1 .imgs img{
+        height: 300px;
+        width: 370px;
+    
+    }
+    .container2 .imgs img{
+        height: 300px;
+        width: 370px;
+    
+    }
+    .container2{
+        padding: 50px 30px;
+    }
+}
+@media (max-width: 400px){
+    .container1{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .container1 .text{
+        padding: 10px 15px;
+        width: 90%;
+    }
+    .container1 .text h2{
+        font-size: 35px;
+        padding: 0;
+    }
+    .container2 .text h2{
+        font-size: 35px;
+    }
+    .container1 .imgs img{
+        height: 250px;
+        width: 290px;
+    
+    }
+    .container2{
+        padding: 50px 20px;
+    }
+    .container2 .imgs img{
+        height: 250px;
+        width: 290px;
+    
+    }
+    .maincontainer h1{
+        font-size: 35px;
+    }
+    .maincontainer h2{
+        font-size: 35px;
+    }
+}

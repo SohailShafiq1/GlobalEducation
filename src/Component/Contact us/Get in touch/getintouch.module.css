@@ -1,0 +1,109 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  background-color: #3f698d;
+  color: white;
+}
+.left {
+  margin-top: 20px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding-left: 0;
+  margin-left: 0;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right img {
+  width: 50%;
+  height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .touch-heading {
+    align-self: flex-start;
+    padding-left: 20px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .touch-para {
+    padding-left: 20px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .left{
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .left {
+    padding-left: 30px;
+  }
+  .right img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+  }
+  .left {
+    width: 100%;
+    margin-top: 0;
+  }
+  .right {
+    width: 100%;
+  }
+  .touch-heading {
+    padding: 0 20px 0;
+    text-align: center;
+  }
+  .touch-para {
+    padding: 0 20px 0;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .touch-heading {
+    font-size: 1.6rem;
+    padding: 0 20px 0;
+    text-align: center;
+  }
+  .touch-para {
+    padding: 0 20px 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}

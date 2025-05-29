@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.subcontainer2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 50px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3f698d;
+    border-radius: 8px;
+    width: 65%;
+    color: white ;
+    font-size: 18px;
+}

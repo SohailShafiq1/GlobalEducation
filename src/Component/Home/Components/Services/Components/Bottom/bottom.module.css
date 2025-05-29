@@ -1,0 +1,153 @@
+.container
+{
+    height: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 100px;
+}
+.box
+{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap:50px; 
+    justify-items:  center; 
+    width: 100%;
+}
+.service
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pic
+{
+    width: 100%;
+    height: 50%;
+}
+.pic img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.text
+{
+    width: 80%;
+    height: 50%;
+    background-color: #3f698d;
+    color: white;
+    border-radius: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+}
+.box p{
+    font-size: 16px; 
+    margin: 0;
+    color:#FEEED5  ;
+
+ }
+
+ .box h2{
+    font-size: 22px;
+ }
+.text button
+{
+    background-color: #e81f11;
+    color: white;
+/*
+3f698d
+e81f11
+*/
+    width: 46%;
+    height: 50px;
+    border: none;
+    border-radius: 2rem;
+    transition: background-color 0.2s ease;
+    position: relative;
+    top: 50px;
+    right: 65px;
+}
+.text button:hover
+{
+    background-color: #F4F3EE ;
+    color: black;
+
+}
+.btn {  
+    color: inherit;
+    text-decoration: none;
+}
+@media (max-width: 850px) {
+    .box p{
+       font-size: 16px; 
+       margin: 0;
+    }
+    .text{
+        text-align: center;
+        padding: 20px 30px;
+
+    }
+    .container
+    {
+        margin: 30px 150px;
+    }
+    .text button
+{
+    top: 60px;
+    right: 70px;
+}
+}
+@media (max-width: 700px) {
+    .text button
+    {
+        top: 50px;
+        right: 70px;
+    }
+    
+}
+
+
+
+
+
+@media (max-width: 670px) {
+    .box p{
+       font-size: 16px; 
+       margin: 0;
+    }
+    .text{
+        text-align: center;
+        padding: 20px 10px;
+    }
+    .container
+{
+    margin: 30px 40px;
+}
+}
+@media (max-width: 400px) {
+    .box
+   {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap:50px; 
+    justify-items:  center; 
+    width: 100%;
+}
+.container
+{
+    margin: 30px 10px;
+}
+.text button
+{
+    top: 50px;
+    right: 50px;
+}
+}

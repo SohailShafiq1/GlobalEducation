@@ -1,0 +1,219 @@
+p{
+    line-height: normal;
+}
+
+/* ...................... Table1 ...........................*/
+
+.table1{
+    display: flex;
+    justify-content: left;
+    padding:  40px 150px ;
+    align-items: left;
+    flex-direction: column;
+    background-color: #F4F3EE ;
+}
+.table1 h1{
+    font-size: 45px;
+
+}
+
+.table1 p{
+    font-size: 16px;
+    color: #313130 ;
+}
+.table1 h2{
+    font-size: 20px;
+    text-align: center;
+margin: 0;
+}
+
+
+/* ...................... Table2 ...........................*/
+
+.table2{
+    display: flex;
+    justify-content: left;
+    padding:  40px 150px ;
+    align-items: left;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.table2 h1{
+    font-size: 45px;
+
+}
+
+.table2 p{
+    font-size: 16px;
+    color: #313130 ;
+}
+
+
+/* ...................... Table3 ...........................*/
+
+.bgcolor{
+    background-color: #F4F3EE ;
+}
+
+
+/* ...................... Table5 ...........................*/
+
+.table5{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+.table5 h1{
+    font-size: 45px;
+
+}
+.table5 h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.table5 p{
+    font-size: 16px;
+    color: #313130 ;
+
+}
+
+
+/* ...................... Apply ...........................*/
+
+.Apply{
+    display: flex;
+    justify-content: left;
+    padding:  40px 150px ;
+    align-items: left;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.Apply h1{
+    font-size: 45px;
+
+}
+.Apply ul{
+    font-size: 16px;
+    color: #313130 ;
+}
+.Apply li{
+    font-size: 16px;
+    list-style-type: disc;
+    display: list-item;
+}
+
+
+.Apply p{
+    font-size: 16px;
+    color: #313130 ;
+}
+
+/* ...................... Tips ...........................*/
+
+.Tips{
+    display: flex;
+    justify-content: left;
+    padding:  40px 150px ;
+    align-items: left;
+    flex-direction: column;
+    background-color: #F4F3EE ;
+}
+.Tips h1{
+    font-size: 45px;
+
+}
+.Tips ul{
+    font-size: 16px;
+    color: #313130 ;
+}
+.Tips li{
+    font-size: 16px;
+    color: #313130 ;
+    list-style-type: disc;
+    display: list-item;
+}
+
+
+.Tips p{
+    font-size: 16px;
+    color: #313130 ;
+}
+@media (max-width: 900px){
+    .container{
+      align-items: unset;
+  
+    }
+    .table1{
+        padding:  40px 50px ;
+    }
+    .table1 h1{
+     text-align: center
+    
+    }
+    .table2{
+        padding:  40px 50px ;
+    }
+    .table2 h1{
+        text-align: center;
+        }
+
+        .Apply{
+            padding:  40px 50px ;
+        }
+        .Apply h1{
+            font-size: 45px;
+            text-align: center;
+        }
+        .Tips{
+            padding:  40px 50px ;
+        }
+        .Tips h1{
+            text-align: center;        
+        }
+    
+  }
+  @media (max-width: 400px){
+    .container{
+      align-items: unset;
+  
+    }
+    .table1{
+        padding:  40px 20px ;
+    }
+    .table1 h1{
+        font-size: 35px;
+    
+    }
+    .table2{
+        padding:  40px 20px ;
+    }
+    .table2 h1{
+        font-size: 35px;
+    }
+    .table5 h1{
+            font-size: 35px;
+        
+    }
+    .table5 h2{
+            font-size: 22px;
+            text-align: center;
+    } 
+    .table5 p{
+        font-size: 16px;
+        color: #313130 ;
+    }
+    .Apply{
+        padding:  40px 30px ;
+    }
+    .Apply h1{
+        font-size: 35px;
+    }
+    .Tips{
+        padding:  40px 20px ;
+    }
+    .Tips h1{
+        font-size: 35px;     
+    }
+  }

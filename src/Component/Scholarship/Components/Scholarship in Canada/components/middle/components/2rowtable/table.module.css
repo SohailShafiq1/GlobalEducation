@@ -1,0 +1,65 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scroll */
+}
+
+.container table {
+  font-family: arial, sans-serif;
+  width: 100%; /* Set the table to take up the full width of the container */
+}
+.container tbody{
+  font-size: 18px;
+}
+.container td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 18px 20px;
+  height: 50px;
+  word-wrap: break-word; /* Ensure long content wraps within cells */
+}
+.container tr{
+  height: 50px;
+}
+.container th{
+  background-color: #3f698d;
+  padding: 18px 20px;
+  font-size: 20px;
+  color: #ffffff ;
+
+
+}
+.container tr:nth-child(even) {
+  background-color: #3f698d;
+  color: #FEEED5 ;
+}
+.container tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.container{
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  padding: 30px;
+}
+th:first-child {
+border-top-left-radius: 40px;
+}
+th:last-child {
+border-top-right-radius: 40px;
+}
+
+tr:last-child td:first-child {
+border-bottom-left-radius: 40px;
+}
+tr:last-child td:last-child {
+border-bottom-right-radius: 40px;
+}
+@media (max-width: 800px){
+  .container{
+    align-items: unset;
+
+  }
+}

@@ -1,0 +1,92 @@
+.subcontainer1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background: #F4F3EE ;
+    padding: 50px 50px;
+
+}
+.subcontainer1 img{
+  padding-right: 45px;
+  height: 400px;
+  width: 300px;
+}
+.subcontainer1 h1{
+  padding: 0 100px; 
+  font-size: 60px;
+}
+.subcontainer2{
+  padding: 60px 130px;
+}
+.subcontainer2 h2{
+  font-size: 45px;
+}
+.subcontainer2 p{
+  font-size: 16px;
+  color: #313130 ;
+
+}
+span{
+}
+@media (max-width: 1220px) {
+  .subcontainer1 h1{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1136px) {
+  .subcontainer1 h1{
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1060px) {
+  .subcontainer1 h1{
+    padding: 0 ;
+  }
+}
+@media (max-width: 990px) {
+  .subcontainer2 h2{
+    font-size: 40px;
+    text-align: center;
+  }
+  .subcontainer2{
+    padding: 20px 100px;
+  }
+  .subcontainer2 p{
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  .subcontainer1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .subcontainer1 h1{
+    text-align: center;
+  }
+  .subcontainer2 h2{
+    font-size: 35px;
+    text-align: center;
+  }
+  .subcontainer1 img{
+    display: none;
+
+  }
+  
+}
+
+@media (max-width: 600px){
+  .subcontainer2{
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 400px){
+  .subcontainer1 h1{
+    font-size: 45px;
+  }
+  .subcontainer2{
+    padding: 20px 20px;
+  }
+  .subcontainer1{
+    padding: 50px 20px;
+  }
+}

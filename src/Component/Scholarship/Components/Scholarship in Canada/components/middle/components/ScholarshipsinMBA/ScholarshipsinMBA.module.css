@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: left;
+    padding:  50px 0px;
+    align-items: left;
+    flex-direction: column;
+    background-color: #F4F3EE ;
+
+}
+.text{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+.text p{
+    font-size: 16px;
+    color: #313130 ;
+}
+.text .ultext li{
+    font-size: 16px;
+    color: #313130 ;
+    list-style-type: disc;
+    display: list-item;
+}
+
+.text .ultext{
+    list-style-type: disc;
+    margin: 0;
+}
+.text h1{
+    font-size: 45px;
+}

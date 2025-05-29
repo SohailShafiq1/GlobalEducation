@@ -1,0 +1,20 @@
+.text{
+    justify-content: center;
+}
+.text h1{
+    font-size: 70px;
+}
+.text p{
+    font-size: 20px;
+    color: #313130  ;
+}
+@media (max-width: 900px){
+    .text{
+        text-align: center;
+    }
+}
+@media (max-width: 500px){
+    .text h1{
+        font-size: 50px;
+    }
+}

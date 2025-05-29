@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+.top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.left-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.data {
+  display: flex;
+  flex-direction: row;
+}
+.right-data {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+.left-data {
+  width: auto;
+  height: 60px;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+.left-data img {
+  width: 100%;
+  height: 50px;
+  align-self: flex-end;
+}
+
+@media (min-width: 1024px) {
+  .right-side {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .left-side {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .box p {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .right-side {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .left-side {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .box p {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .bottom {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .right-side {
+    width: 100%;
+  }
+  .data {
+    margin: 0 20px 0;
+  }
+  .box p {
+    margin: 0 20px 0;
+    text-align: center;
+  }
+  .top h1 {
+    font-size: 1.6rem;
+    margin: 10px 20px 0;
+    text-align: center;
+  }
+}

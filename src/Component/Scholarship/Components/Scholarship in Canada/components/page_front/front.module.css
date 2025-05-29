@@ -1,0 +1,27 @@
+.container{
+    background-color: #F4F3EE ;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 30px 60px 30px;
+}
+.text{
+    width: auto;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+@media (max-width: 1040px){
+    .text{
+        padding: 0 20px;
+    }
+    .container{
+        padding: 60px 15px 60px 15px;
+    }
+}
+@media (max-width: 1040px){
+    .text{
+        padding: 0;
+    }
+}

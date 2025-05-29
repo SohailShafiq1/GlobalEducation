@@ -1,0 +1,139 @@
+.subcontainer1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background: #F4F3EE;
+    padding: 40px 50px;
+
+}
+.subcontainer1 img{
+  padding-right: 45px;
+  height: 400px;
+  width: 300px;
+}
+.subcontainer1 .text{
+  padding: 0 50px; 
+  text-align: center;
+}
+.subcontainer1 h1{
+  font-size: 70px;
+}
+.subcontainer1 p{
+  padding: 0 90px;
+  font-size: 18px;
+  color: #313130 ;
+
+}
+.subcontainer2{
+  padding: 20px 130px;
+}
+.subcontainer2 h2{
+  font-size: 45px;
+  text-align: center;
+}
+.subcontainer2 p{
+  font-size: 16px;
+  color: #313130 ;
+
+}
+
+@media (max-width: 1220px) {
+  .subcontainer1 .text{
+    padding: 0 30px;
+    font-size: 65px;
+  }
+  .subcontainer1 p{
+    padding: 0 40px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1136px) {
+  .subcontainer1 h1{
+    padding: 0 ;
+    font-size: 65px;
+  }
+}
+@media (max-width: 1060px) {
+  .subcontainer1 .text{
+    padding: 0 20px;
+  }
+}
+@media (max-width: 990px) {
+  .subcontainer2 h2{
+    font-size: 40px;
+    text-align: center;
+  }
+  .subcontainer2{
+    padding: 20px 100px;
+  }
+  .subcontainer1{
+    padding: 40px 20px;
+
+}
+ 
+}
+@media (max-width: 900px) {
+  .subcontainer1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .subcontainer1 h1{
+    text-align: center;
+  }
+  .subcontainer2 h2{
+    font-size: 35px;
+    text-align: center;
+  }
+  .subcontainer2 p{
+    font-size: 18px;
+  }
+  .subcontainer1 img{
+    display: none;
+  }
+  
+}
+
+@media (max-width: 600px){
+  .subcontainer1 img{
+    height: 300px;
+    width: 370px;
+    padding-right: 20px;
+
+  }
+  .subcontainer1 h1{
+    font-size: 45px;
+  }
+  .subcontainer1 .text{
+    padding: 30px;
+  }
+  .subcontainer1 p{
+    font-size: 18px;
+  }
+  .subcontainer2 {
+    padding: 20px 50px;
+  }
+  .subcontainer1{
+    padding: 0px 20px;
+}
+}
+@media (max-width: 400px){
+  .subcontainer1 img{
+    height: 250px;
+    width: 290px;
+    padding-right: 0px;
+
+  }
+  .subcontainer1 h1{
+    font-size: 40px;
+  }
+  .subcontainer1 .text{
+    padding: 30px 0;
+  }
+  .subcontainer2 {
+    padding: 20px 20px;
+  }
+  .subcontainer2 h2{
+    font-size: 30px;
+  }
+  
+}

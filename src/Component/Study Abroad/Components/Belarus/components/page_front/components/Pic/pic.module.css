@@ -1,0 +1,16 @@
+.imgs img{
+    height: 450px;
+    width: 500px;
+    padding-top: 40px;
+}
+@media (max-width: 1090px){
+    .imgs img{
+        height: 400px;
+        width: 450px;
+    }
+}
+@media (max-width: 900px){
+    .imgs img{
+        display: none;
+    }
+}

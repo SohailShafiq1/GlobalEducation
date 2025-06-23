@@ -1,0 +1,42 @@
+.maincontainer{
+    display: flex;
+    justify-content: left;
+    padding:  50px 150px;
+    align-items: left;
+    flex-direction: column;
+}
+.container h1{
+    font-size: 45px;
+}
+.container h2{
+    font-size: 19px;
+    color: #000000;
+}
+.container li{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    display: list-item;
+    padding: 5px 0;
+}
+.container p{
+    font-size: 16px;
+}
+@media (max-width: 900px){
+    .maincontainer{
+        padding:  50px 50px;
+    }
+    .container h1{
+        text-align: center;
+    }
+}
+@media (max-width: 400px){
+    .container h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .maincontainer{
+        padding:  50px 30px;
+    }
+}

@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+iframe{
+    width: 800px;
+    height: 400px;
+}
+.container .text{
+    width: 78%;
+    margin: 30px 0;
+}
+.container .text h1{
+    font-size: 45px;
+}
+.container .text p{
+    font-size: 16px;
+    color: #313130 ;
+}
+@media (max-width: 900px){
+    .container .text{
+        text-align: center;
+        margin: 30px 0;
+    }
+    iframe{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media (max-width: 550px){
+    iframe{
+        width: 350px;
+        height: 200px;
+    }
+    .container .text{
+        width: 85%;
+        margin: 15px 0;
+    }
+    .container{
+        padding: 30px 30px;
+    }
+}
+@media (max-width: 370px){
+    iframe{
+        width: 280px;
+        height: 200px;
+    }
+    .container{
+        padding: 30px 10px;
+    }
+}

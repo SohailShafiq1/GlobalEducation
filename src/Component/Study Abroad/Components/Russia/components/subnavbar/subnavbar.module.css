@@ -1,0 +1,48 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.container{
+    background-color: #3f698d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    color: white ;
+    height: 90px;
+    align-items: center; 
+    white-space: nowrap; 
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.container li{
+    text-decoration: none;
+}
+.container a{
+    text-decoration: none;
+    color: white ;
+    padding: 5px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: none;
+    border-radius: 0;
+    padding: 0px 20px;
+    background-color: #3f698d;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  @media (max-width: 800px){
+    .container{
+        justify-content: unset; 
+    }
+    .sticky {
+      padding: 0px;
+    }
+  }

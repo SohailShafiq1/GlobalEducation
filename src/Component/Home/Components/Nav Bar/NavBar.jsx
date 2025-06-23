@@ -72,7 +72,6 @@ const NavBar = () => {
           </div>
         </li>
         <li>
-          
             Study Abroad
             <IoIosArrowDown className={s["arrow"]} />
          
@@ -80,12 +79,12 @@ const NavBar = () => {
             <ul className={s["dropdown-ul"]}>
               <li>
                 <NavLink to="/ukStudyAbroad" className={s["btn"]}>
-                  Study In Cyprus
+                  Study In United Kingdom
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/usaStudyAbroad" className={s["btn"]}>
-                  Study In USA
+                <NavLink to="/australiaStudyAbroad" className={s["btn"]}>
+                  Study In Australia
                 </NavLink>
               </li>
               <li>
@@ -93,10 +92,55 @@ const NavBar = () => {
                   Study In Canada
                 </NavLink>
               </li>
+              <li>
+                <NavLink to="/franceStudyAbroad" className={s["btn"]}>
+                  Study In France
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/spainStudyAbroad" className={s["btn"]}>
+                  Study In Spain
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/irelandStudyAbroad" className={s["btn"]}>
+                  Study In Ireland
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/romaniaStudyAbroad" className={s["btn"]}>
+                  Study In Romania
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/belarusStudyAbroad" className={s["btn"]}>
+                  Study In Belarus
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/russiaStudyAbroad" className={s["btn"]}>
+                  Study In Russia
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/greekcyprusStudyAbroad" className={s["btn"]}>
+                  Study In Greek Cyprus
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/northcyprusStudyAbroad" className={s["btn"]}>
+                  Study In North Cyprus
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/georgiaStudyAbroad" className={s["btn"]}>
+                  Study In Georgia
+                </NavLink>
+              </li>
             </ul>
           </div>
         </li>
-        <li>
+        {/* <li>
             Scholarships
             <IoIosArrowDown className={s["arrow"]} />
 
@@ -119,8 +163,18 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
+        </li> */}
+          <li>
+          <NavLink to="/visitvisa" className={s["btn"]}>
+            Visit Visa
+          </NavLink>
         </li>
         <li>
+          <NavLink to="/workvisa" className={s["btn"]}>
+            Work Visa
+          </NavLink>
+        </li>
+        {/* <li>
           <NavLink to="/aboutUs" className={s["btn"]}>
             About Us
             <IoIosArrowDown className={s["arrow"]} />
@@ -153,17 +207,19 @@ const NavBar = () => {
              
             </ul>
           </div>
-        </li>
+        </li> */}
         {/* <li>
           <NavLink to="/resources" className={s["btn"]}>
             Resources
           </NavLink>
         </li> */}
+        
         <li>
           <NavLink to="/contact" className={s["btn"]}>
             Contact Us
           </NavLink>
         </li>
+      
       </ul>
     </div>
   );

@@ -16,6 +16,8 @@ import AboutusRouting from './Component/Routing/AboutusRouting'
 import ScholarshipsRouting from "./Component/Routing/ScholarshipsRouting";
 import Footer from "./Component/Footer/Footer";
 import StudentServicesrRouting from "./Component/Routing/StudentServicesrRouting";
+import VisitVisa from './Component/VisitVisa/VisitVisa'
+import WorkVisa from './Component/WorkVisa/WorkVisa'
 function HomeScreen() {
   return (<Home />);
 }
@@ -40,9 +42,9 @@ function App() {
           <Route path="/" element={<HomeScreen />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/resources" element={<Resources />} />
-
           <Route path="/contact" element={<ContactUs />} />
-          
+          <Route path="/visitvisa" element={<VisitVisa />} />
+          <Route path="/workvisa" element={<WorkVisa />} />
           
         </Routes>
       <Routing/>

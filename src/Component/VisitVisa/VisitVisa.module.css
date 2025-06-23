@@ -1,0 +1,164 @@
+/* VisitVisa.module.css */
+
+.container {
+  background: #f4f3ee;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.heading {
+  color: #1a3c40;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.countryList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.countryItem {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  color: #1a3c40;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: background 0.2s, color 0.2s;
+}
+
+.countryItem:hover {
+  background: #e6f0ee;
+  color: #0e2326;
+}
+
+.explanation {
+  margin-bottom: 2rem;
+  color: #2d4a53;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.2rem 1rem;
+}
+
+.introBox {
+  background: #e6f0ee;
+  border-left: 5px solid #1a3c40;
+  border-radius: 8px;
+  padding: 1.2rem 1rem;
+  margin-bottom: 2rem;
+  color: #1a3c40;
+  font-size: 1.08rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.countryBtn {
+  background: #1a3c40;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.countryBtn:hover, .countryBtn:focus {
+  background: #2d4a53;
+  color: #e6f0ee;
+  outline: none;
+}
+
+.countrySection {
+  margin-bottom: 2.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1.5rem 1.2rem;
+  scroll-margin-top: 90px;
+}
+
+.countrySummary {
+  color: #2d4a53;
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+}
+
+.detailsLabel {
+  display: block;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #0e2326;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.5px;
+}
+
+.countryDetails {
+  background: linear-gradient(90deg, #e6f0ee 0%, #fff 100%);
+  border-left: 5px solid #1a3c40;
+  border-radius: 8px;
+  padding: 1.2rem 1rem 1rem 1.3rem;
+  font-size: 1.08rem;
+  color: #1a3c40;
+  white-space: pre-line;
+  margin-bottom: 0.2rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s;
+}
+
+.countryDetails:hover {
+  box-shadow: 0 4px 16px rgba(26,60,64,0.10);
+  background: linear-gradient(90deg, #f4f3ee 0%, #e6f0ee 100%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 0.5rem;
+    max-width: 98vw;
+  }
+  .heading {
+    font-size: 1.3rem;
+  }
+  .countryItem {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .countryDetails {
+    font-size: 0.95rem;
+    padding: 0.7rem 0.5rem 0.7rem 0.7rem;
+  }
+  .introBox {
+    font-size: 0.98rem;
+    padding: 0.7rem 0.5rem;
+  }
+  .countryBtn {
+    font-size: 0.92rem;
+    padding: 0.4rem 0.7rem;
+  }
+  .countrySection {
+    padding: 0.8rem 0.3rem;
+  }
+  .countrySummary {
+    font-size: 0.97rem;
+  }
+  .countryDetails {
+    font-size: 0.93rem;
+    padding: 0.6rem 0.3rem;
+  }
+}

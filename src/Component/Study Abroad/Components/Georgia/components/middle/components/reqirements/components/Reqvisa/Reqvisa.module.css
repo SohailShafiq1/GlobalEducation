@@ -1,0 +1,25 @@
+.maincontainer{
+    display: flex;
+    justify-content: left;
+    padding:  50px 0px;
+    align-items: left;
+    flex-direction: column;
+    
+}
+.container h1{
+    font-size: 45px;
+}
+.container h2{
+    font-size: 18px;
+}
+.container li{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    display: list-item;
+    padding: 5px 0;
+}
+.container p{
+    font-size: 16px;
+}

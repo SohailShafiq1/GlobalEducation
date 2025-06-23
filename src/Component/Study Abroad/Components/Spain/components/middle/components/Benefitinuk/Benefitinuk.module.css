@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    justify-content: left;
+    padding:  50px 150px;
+    align-items: left;
+    flex-direction: column;
+}
+.text{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+.text p{
+    font-size: 16px;
+    color: #313130 ;
+}
+.text .ultext li{
+    list-style-type: disc;
+    display: list-item;
+    font-size: 16px;
+    color: #313130 ;
+}
+.container .imp{
+    font-size: 18px;
+    text-align: center;
+    color: #313130 ;
+
+}
+.text .ultext{
+    list-style-type: disc;
+    margin: 0;
+}
+.text h1{
+    font-size: 45px;
+}
+@media (max-width: 900px){
+    .container{
+        padding:  50px 50px;
+
+    }
+    .text h1{
+        text-align: center;
+    }
+}

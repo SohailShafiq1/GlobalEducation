@@ -1,0 +1,263 @@
+/* ...................... Table2 ...........................*/
+
+
+.table2{
+    display: flex;
+    justify-content: left;
+    padding:  40px 150px ;
+    align-items: left;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.table2 h1{
+    font-size: 45px;
+
+}
+
+.table2 p{
+    font-size: 16px;
+    color: #313130 ;
+}
+.table2 h2{
+    font-size: 18px;
+    text-align: center;
+margin: 0;
+}
+
+/* ...................... Table3 ...........................*/
+
+
+.table3{
+    display: flex;
+    justify-content: left;
+    padding:  40px 150px ;
+    align-items: left;
+    flex-direction: column;
+    background-color: #F4F3EE ;
+}
+.table3 h1{
+    font-size: 45px;
+    text-align: center;
+
+}
+.table3 p{
+    font-size: 16px;
+    color: #313130 ;}
+
+/* ...................... Table4 ...........................*/
+
+
+.table4{
+    display: flex;
+    justify-content: left;
+    padding:  40px 150px ;
+    align-items: left;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.table4 h1{
+    font-size: 45px;
+
+}
+
+.table4 p{
+    font-size: 16px;
+    color: #313130 ;
+}
+.table4 h2{
+    font-size: 18px;
+    text-align: center;
+margin: 0;
+}
+/* ...................... Table5 ...........................*/
+
+.table5{
+    display: flex;
+    justify-content: left;
+    padding:  40px 150px ;
+    align-items: left;
+    flex-direction: column;
+    background-color: #F4F3EE ;
+}
+.table5 h1{
+    font-size: 45px;
+
+}
+
+.table5 p{
+    font-size: 16px;
+    color: #313130 ;}
+.table5 h2{
+    font-size: 18px;
+    text-align: center;
+margin: 0;
+}
+
+
+/* ...................... Table6 ...........................*/
+
+.table6{
+    display: flex;
+    justify-content: left;
+    padding:  40px 150px ;
+    align-items: left;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+
+}
+.table6 h1{
+    font-size: 45px;
+
+}
+
+.table6 p{
+    font-size: 16px;
+    color: #313130 ;
+}
+.table6 h2{
+    font-size: 18px;
+    text-align: center;
+margin: 0;
+font-weight: 100;
+}
+.table6 h3{
+    font-size: 18px;
+    text-align: center;
+margin: 0;
+}
+
+/* ...................... Table7 ...........................*/
+
+.table7{
+    display: flex;
+    justify-content: left;
+    padding:  40px 150px ;
+    align-items: left;
+    flex-direction: column;
+    background-color: #F4F3EE ;
+}
+.table7 h1{
+    font-size: 45px;
+
+}
+
+.table7 p{
+    font-size: 16px;
+    color: #313130 ;
+}
+.table7 h2{
+    font-size: 18px;
+    color: #313130 ;
+}
+.table7 h2{
+    font-size: 18px;
+    color: #313130 ;
+}
+@media (max-width: 900px){
+    .table2{
+        padding:  40px 50px ;
+    }
+    .table2 h1{
+        text-align: center;    
+    }
+    .table3{
+        padding:  40px 50px ;
+    }
+    .table3 h1{
+        text-align: center;
+    }
+    
+.table4{
+    padding:  40px 50px ;
+}
+.table4 h1{
+    text-align: center;
+
+}
+
+.table4 p{
+    font-size: 16px;
+    color: #313130 ;
+}
+.table4 h2{
+    font-size: 18px;
+}
+.table5{
+    padding:  40px 50px ;
+}
+.table5 h1{
+    text-align: center;
+
+}
+
+.table5 p{
+    font-size: 16px;
+    color: #313130 ;}
+.table5 h2{
+    font-size: 18px;
+    text-align: center;
+margin: 0;
+}
+.table6{
+    padding:  40px 50px ;
+
+}
+.table6 h1{
+    text-align: center;
+}
+.table7{
+    padding:  40px 50px ;
+
+}
+.table7 h1{
+    text-align: center;
+}
+}
+
+
+@media (max-width: 400px){
+    .table2{
+        padding:  40px 20px ;
+    }
+    .table2 h1{
+        font-size: 35px;
+        }
+    .table3{
+        padding:  40px 20px ;
+
+    }
+    .table3 h1{
+        font-size: 35px;
+    
+    }
+    .table4{
+        padding:  40px 20px ;
+    }
+    .table4 h1{
+        font-size: 35px;
+    
+    }
+    .table5{
+        padding:  40px 20px ;
+    }
+    .table5 h1{
+        font-size: 35px;
+    
+    }
+    .table6{
+        padding:  40px 20px ;
+    
+    }
+    .table6 h1{
+        font-size: 35px;
+    
+    }
+    .table7{
+        padding:  40px 20px ;
+    
+    }
+    .table7 h1{
+        font-size: 35px;
+    
+    }
+}

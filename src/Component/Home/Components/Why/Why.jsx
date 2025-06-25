@@ -6,7 +6,6 @@ const s = styles;
 const Why = () => {
   return (
     <div className={s["container"]} >
-        <Left/>
         <Right/>
     </div>
   )

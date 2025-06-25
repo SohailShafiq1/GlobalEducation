@@ -46,9 +46,10 @@ const serviceData = [
   },
   {
     image: img6,
-    ServiceName: "Student Accommodation",
+    ServiceName: "Visit Visa",
     para: "Explore one of the world's largest student accommodation portals to plan your study abroad accommodation cost-effectively.",
-    link: "/student-accommodation",
+    quote: "Travel is the only thing you buy that makes you richer. – Anonymous",
+    link: "/visitvisa",
   },
 ];
 

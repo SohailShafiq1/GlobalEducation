@@ -6,16 +6,23 @@ const s = styles;
 
 const NavBar = () => {
   const [menuopen, setmenuopen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null); // Track which dropdown is open
   const location = useLocation();
   useEffect(() => {
     setmenuopen(false);
+    setOpenDropdown(null);
   }, [location]);
+
+  // Helper to toggle dropdowns
+  const handleDropdown = (name) => {
+    setOpenDropdown((prev) => (prev === name ? null : name));
+  };
 
   return (
     
     <div
       className={s["container"]}
-      style={{ backgroundColor: menuopen ? "#F4F3EE " : "#F4F3EE " }}
+      style={{ backgroundColor: menuopen ? "#F4F3EE " : "#F4F3EE ", position: menuopen && window.innerWidth <= 700 ? "fixed" : "relative", width: menuopen && window.innerWidth <= 700 ? "100vw" : "auto", height: menuopen && window.innerWidth <= 700 ? "100vh" : "auto", top: 0, left: 0, zIndex: menuopen && window.innerWidth <= 700 ? 9999 : "auto" }}
     >
             {menuopen && <div className={s["overlay"]}></div>}
 
@@ -25,28 +32,27 @@ const NavBar = () => {
         <span></span>
         <span></span>
       </div>
-      <ul className={`${s["mainlinks"]} ${menuopen ? s["open"] : ""}`}>
+      <ul className={`${s["mainlinks"]} ${menuopen ? s["open"] : ""}`}
+        style={menuopen && window.innerWidth <= 700 ? { width: "100vw", height: "100vh", background: "#F4F3EE", position: "fixed", top: 0, left: 0, zIndex: 9999, overflowY: "auto" } : {}}>
         <li>
           <NavLink to="/" className={s["btn"]}>
             Home
           </NavLink>
         </li>
         <li>
-            Student Services
-            <IoIosArrowDown className={s["arrow"]} />
-         
-          <div className={s["dropdown"]}>
+          <span onClick={() => handleDropdown("student")}>Student Services <IoIosArrowDown className={s["arrow"]} /></span>
+          <div className={s["dropdown"]} style={{ display: openDropdown === "student" ? "block" : "none" }}>
             <ul className={s["dropdown-ul"]}>
               <li>
                 <NavLink to="/education-counselling" className={s["btn"]}>
                   International Education Counselling
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/health-Insurance" className={s["btn"]}>
                   Health insurance for Students
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink to="/application-process" className={s["btn"]}>
                   University Application Process
@@ -72,10 +78,8 @@ const NavBar = () => {
           </div>
         </li>
         <li>
-            Study Abroad
-            <IoIosArrowDown className={s["arrow"]} />
-         
-          <div className={s["dropdown"]}>
+          <span onClick={() => handleDropdown("abroad")}>Study Abroad <IoIosArrowDown className={s["arrow"]} /></span>
+          <div className={s["dropdown"]} style={{ display: openDropdown === "abroad" ? "block" : "none" }}>
             <ul className={s["dropdown-ul"]}>
               <li>
                 <NavLink to="/ukStudyAbroad" className={s["btn"]}>

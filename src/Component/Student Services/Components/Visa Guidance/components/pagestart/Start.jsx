@@ -24,7 +24,7 @@ function Start() {
             </h2>
             <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true">When it comes to visas, the process and outcomes can be very daunting for a lot of people. All you need is a team you can trust which can give you an unbiased and correct advice.
                 <br />
-                At AECC Global, we've got years of experience in handling every type and class of visa. Our visa experts will guide and support you throughout the entire visa application process.
+                At Global Education Consultancy, we've got years of experience in handling every type and class of visa. Our visa experts will guide and support you throughout the entire visa application process.
             </p>    
             <ul className={startcss.subul} data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true">
                 <li>Our team of visa documentation experts can help with every type of visa including student visas, partner visas and skilled independent visas.</li>

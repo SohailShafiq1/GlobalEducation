@@ -20,7 +20,7 @@ const Guidance = () => {
           </h1>
         </div>
         <p className={s["guide-para"]} data-aos="zoom-out-down" data-aos-easing="ease-in-out" data-aos-once="true">
-          At AECC Global, all our professionals are highly experienced in
+          At Global Education Consultancy, all our professionals are highly experienced in
           overseas education and hold appropriate qualifications for effective
           education counselling. We work on your behalf as an independent
           representative of over 500+ Top universities and educational

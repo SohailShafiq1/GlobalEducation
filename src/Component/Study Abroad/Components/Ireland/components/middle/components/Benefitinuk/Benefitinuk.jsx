@@ -12,27 +12,23 @@ function Benefitinuk() {
   return (
     <div className={Benefit.container}>
     <div className={Benefit.text}>
-      <h1 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="true">Benefits of Studying in the Cyprus</h1>
-      <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true">Studying in Cyprus offers numerous benefits for international students. Here are some key advantages:</p>
+      <h1 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="true">Benefits of Studying in Ireland</h1>
+      <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true">Studying in Ireland offers numerous benefits for international students. Here are some key advantages:</p>
       <ul className={Benefit.ultext} data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-once="true">
-        <li ><strong>	High-Quality Education: </strong> Cypriot universities provide high academic standards and are recognized internationally. Many institutions follow the Bologna Process, ensuring that degrees are compatible across Europe. </li>
-        <li ><strong>	Affordable Tuition Fees:</strong>Compared to many Western countries, tuition fees in Cyprus are relatively low, making it an economical choice for students seeking quality education without high costs.</li>
-        <li><strong>	English-Taught Programs:</strong> Most universities offer programs in English, which is beneficial for international students who may not speak Greek or Turkish. This accessibility helps students focus on their studies without language barriers.</li>
-        <li> <strong>Cultural Diversity: </strong>  Cyprus is home to a diverse student population from various countries, fostering a multicultural environment that enriches the educational experience and promotes cultural exchange. </li>
-        <li> <strong> Safe Environment:</strong> Cyprus is known for its low crime rate and welcoming atmosphere, making it one of the safest countries in Europe for students to live and study. </li>
-        <li> <strong> 	Beautiful Climate and Scenery: </strong>With its Mediterranean climate, Cyprus enjoys warm weather and plenty of sunshine throughout the year. The island's stunning beaches and natural landscapes provide a pleasant backdrop for student life.  </li>
-        <li> <strong> 	Rich History and Culture: </strong> Students have the opportunity to explore Cyprus's rich history, archaeological sites, and cultural heritage, enhancing their overall experience while studying. </li>
-        <li> <strong> 	Post-Study Work Opportunities:  </strong>  Graduates may find opportunities to work in Cyprus after completing their studies, allowing them to gain valuable work experience in an international setting.</li>
-        <li> <strong> 	Strategic Location:  </strong> Situated at the crossroads of Europe, Asia, and Africa, Cyprus serves as a convenient base for travel to other countries, making it easy for students to explore different cultures during their studies. </li>
-        <li> <strong> 	Strategic Location:  </strong>  Universities in Cyprus often provide strong support services for international students, including orientation programs, academic advising, and assistance with accommodation.</li>
+        <li ><strong>World-Class Education: </strong> Irish universities are globally renowned for their academic excellence and research contributions, with several institutions ranked among the world's top universities. </li>
+        <li ><strong>English-Speaking Country:</strong>As a native English-speaking country, Ireland eliminates language barriers and provides an immersive English environment for international students.</li>
+        <li><strong>EU Membership Benefits:</strong> As an EU member, Ireland offers students access to European opportunities and the right to work in any EU country after graduation.</li>
+        <li> <strong>Tech Hub of Europe: </strong>  Ireland is home to major tech companies like Google, Facebook, and Apple, providing excellent internship and career opportunities in technology. </li>
+        <li> <strong> Safe and Welcoming Culture:</strong> Ireland is known for its friendly people, safe environment, and welcoming attitude toward international students. </li>
+        <li> <strong>  Rich Cultural Heritage: </strong>Experience Ireland's rich history, literature, music, and traditions while studying in this culturally vibrant country.  </li>
+        <li> <strong>  Post-Study Work Rights: </strong> Ireland offers excellent post-study work opportunities, allowing graduates to remain and work in the country after completing their studies. </li>
+        <li> <strong>  Research Opportunities:  </strong>  Irish universities are leaders in research and innovation, particularly in technology, pharmaceuticals, and agriculture.</li>
+        <li> <strong>  Beautiful Natural Environment:  </strong> From rolling green hills to dramatic coastlines, Ireland offers stunning natural beauty and outdoor activities. </li>
+        <li> <strong>  Gateway to Europe:  </strong>  Ireland's location makes it easy to travel and explore other European countries during studies.</li>
          </ul>
-      <p data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">In summary, studying in Cyprus combines high-quality education with affordability, safety, and a vibrant cultural experience, making it an attractive destination for students from around the world.
-
-
-</p>
-
+      <p data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">In summary, studying in Ireland combines world-class education with excellent career opportunities, English-language advantage, and rich cultural experiences in a safe and welcoming environment.</p>
     </div>
-    <p className={Benefit.imp} data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">Looking to gather more information about Applying to Study in the Cyprus and the array of advantages it can offer? Reach out to SunRays and schedule a FREE consultation today to delve deeper into the details</p>
+    <p className={Benefit.imp} data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">Looking to gather more information about Applying to Study in Ireland and the array of advantages it can offer? Reach out to Global Education Consultancy and schedule a FREE consultation today to delve deeper into the details</p>
     </div>
   )
 }

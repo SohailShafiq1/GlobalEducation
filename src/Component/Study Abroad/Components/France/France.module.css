@@ -1,0 +1,301 @@
+/* France Study Abroad Page Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Section */
+.headerSection {
+  text-align: center;
+  padding: 80px 0 60px;
+  background: linear-gradient(135deg, #0055A4 0%, #FFFFFF 50%, #EF4135 100%);
+  color: #333;
+  margin: 0 -20px 60px;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.headerSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,85,164,0.8) 0%, rgba(255,255,255,0.9) 50%, rgba(239,65,53,0.8) 100%);
+  z-index: 1;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 2;
+}
+
+.flag {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  color: #0055A4;
+}
+
+.subheading {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+  color: #333;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Rest of the styles follow the same pattern as other countries */
+.statsSection {
+  margin-bottom: 80px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.statCard {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 85, 164, 0.1);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 85, 164, 0.15);
+}
+
+.statIcon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.statValue {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0055A4;
+  margin-bottom: 10px;
+}
+
+.statLabel {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.overviewSection {
+  margin-bottom: 80px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.overviewSection h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #0055A4;
+  position: relative;
+}
+
+.overviewSection h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0055A4, #EF4135);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.overviewSection p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.benefitsSection {
+  background: #f8f9fa;
+  padding: 80px 40px;
+  margin: 0 -20px 80px;
+  border-radius: 20px;
+}
+
+.benefitsSection h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #0055A4;
+  position: relative;
+}
+
+.benefitsSection h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0055A4, #EF4135);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.benefitCard {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 85, 164, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.benefitCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 85, 164, 0.15);
+}
+
+.benefitIcon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.benefitCard h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #0055A4;
+}
+
+.benefitCard p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #0055A4 0%, #EF4135 100%);
+  color: white;
+  padding: 80px 40px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 -20px 40px;
+}
+
+.ctaSection h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.ctaSection p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  background: white;
+  color: #0055A4;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.ctaButton:hover {
+  background: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .heading {
+    font-size: 2rem;
+  }
+  
+  .subheading {
+    font-size: 1.1rem;
+  }
+  
+  .statsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .headerSection {
+    padding: 60px 20px 40px;
+    margin: 0 -15px 40px;
+  }
+  
+  .benefitsSection {
+    padding: 60px 20px;
+    margin: 0 -15px 60px;
+  }
+  
+  .ctaSection {
+    padding: 60px 20px;
+    margin: 0 -15px 40px;
+  }
+}

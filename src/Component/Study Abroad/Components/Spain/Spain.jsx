@@ -1,58 +1,275 @@
-import React from 'react'
-import Ukcss from './Ukstudy.module.css'
+import React, { useState } from 'react';
+import styles from './Spain.module.css';
 
 const Spain = () => {
+  const [activeTab, setActiveTab] = useState('requirements');
+  const [openFaq, setOpenFaq] = useState(null);
+
+  const stats = [
+    { number: '83', label: 'Universities' },
+    { number: '€8,000', label: 'Avg Annual Tuition' },
+    { number: '€10,000', label: 'Living Cost/Year' },
+    { number: '96%', label: 'Visa Success Rate' }
+  ];
+
+  const benefits = [
+    {
+      icon: '🌍',
+      title: 'Gateway to Europe',
+      description: 'Strategic location providing easy access to explore all of Europe during studies'
+    },
+    {
+      icon: '🎓',
+      title: 'Academic Excellence',
+      description: 'Home to some of Europe\'s oldest and most prestigious universities'
+    },
+    {
+      icon: '☀️',
+      title: 'Mediterranean Lifestyle',
+      description: 'Enjoy year-round sunshine, beautiful beaches, and vibrant cultural life'
+    },
+    {
+      icon: '💰',
+      title: 'Affordable Education',
+      description: 'Competitive tuition fees and reasonable cost of living compared to other EU countries'
+    },
+    {
+      icon: '🗣️',
+      title: 'Language Benefits',
+      description: 'Learn Spanish, the world\'s second most spoken language'
+    },
+    {
+      icon: '🏛️',
+      title: 'Rich Heritage',
+      description: 'Immerse yourself in centuries of art, architecture, and cultural traditions'
+    }
+  ];
+
+  const tabContent = {
+    requirements: {
+      title: 'Admission Requirements',
+      content: [
+        'High school diploma or equivalent (Bachillerato)',
+        'Academic transcripts with certified translations',
+        'Selectividad (PAU) exam for some programs',
+        'Spanish language proficiency (DELE/SIELE) for Spanish-taught programs',
+        'English proficiency for English-taught programs',
+        'Valid passport copy',
+        'Statement of purpose and motivation letter',
+        'Letters of recommendation (academic/professional)'
+      ]
+    },
+    process: {
+      title: 'Application Process',
+      content: [
+        'Research universities and programs in your field',
+        'Check specific admission requirements and deadlines',
+        'Submit application through university portal or UNED',
+        'Complete any required entrance exams',
+        'Receive admission letter and accept your place',
+        'Apply for student visa at Spanish consulate',
+        'Arrange accommodation and prepare for arrival',
+        'Complete university registration and orientation'
+      ]
+    },
+    documents: {
+      title: 'Required Documents',
+      content: [
+        'Valid passport (minimum 6 months validity)',
+        'Academic certificates and transcripts (apostilled)',
+        'Language proficiency certificates',
+        'Medical certificate and health insurance',
+        'Financial proof (bank statements/sponsor letter)',
+        'Passport-size photographs',
+        'Criminal background check (apostilled)',
+        'Completed visa application form',
+        'University acceptance letter'
+      ]
+    },
+    universities: {
+      title: 'Top Universities',
+      content: [
+        'Complutense University of Madrid - Largest university in Spain',
+        'University of Barcelona - Leading research institution',
+        'Autonomous University of Madrid - High-ranking public university',
+        'Pompeu Fabra University - Modern, innovative institution',
+        'University of Valencia - Historic with strong programs',
+        'Carlos III University of Madrid - Technology and business focus',
+        'IE University - Top private business school',
+        'ESADE Business School - International business programs'
+      ]
+    }
+  };
+
+  const faqs = [
+    {
+      question: 'Can I work while studying in Spain?',
+      answer: 'Yes, non-EU students can work up to 20 hours per week during studies. EU students have no work restrictions.'
+    },
+    {
+      question: 'What is the cost of living in Spain?',
+      answer: 'Monthly living costs range from €700-1,200, depending on the city. Madrid and Barcelona are more expensive than smaller cities.'
+    },
+    {
+      question: 'Are scholarships available for international students?',
+      answer: 'Yes, various scholarships are available including government scholarships, university grants, and Erasmus+ programs for eligible students.'
+    },
+    {
+      question: 'Do I need to speak Spanish to study in Spain?',
+      answer: 'For Spanish-taught programs, yes. However, many universities offer programs in English. Learning Spanish is highly recommended for daily life.'
+    },
+    {
+      question: 'Is Spain safe for international students?',
+      answer: 'Yes, Spain is very safe with low crime rates. It\'s consistently ranked as one of the safest countries in Europe.'
+    },
+    {
+      question: 'Can I travel to other EU countries while studying?',
+      answer: 'Yes, with a Spanish student visa, you can travel within the Schengen Area for short-term visits.'
+    }
+  ];
+
+  const galleryImages = [
+    {
+      src: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+      fallback: 'https://picsum.photos/400/300?random=61',
+      alt: 'Madrid - Spanish capital and educational hub'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+      fallback: 'https://picsum.photos/400/300?random=62',
+      alt: 'Barcelona - Vibrant Mediterranean city'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1543785734-4b6e564642f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+      fallback: 'https://picsum.photos/400/300?random=63',
+      alt: 'Spanish university campus and architecture'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1571867424488-4565932edb41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
+      fallback: 'https://picsum.photos/400/300?random=64',
+      alt: 'Spanish student life and culture'
+    }
+  ];
+
   return (
-    <div className={Ukcss.top}>
-      <h1 style={{textAlign: 'center', color: '#1a3c40', margin: '2rem 0 1.5rem 0', fontWeight: 700, fontSize: '2.2rem'}}>Study in Spain</h1>
-      <div className={Ukcss.section}>
-        <h2 style={{color: '#2d4a53'}}>Benefits of Studying in Spain</h2>
-        <ul style={{marginLeft: '1.5rem', color: '#1a3c40'}}>
-          <li>Renowned universities and diverse programs</li>
-          <li>Affordable tuition fees and living costs</li>
-          <li>Rich culture, history, and Mediterranean lifestyle</li>
-          <li>Opportunities for scholarships and internships</li>
-          <li>Central location in Europe for travel</li>
-        </ul>
+    <div className={styles.container}>
+      {/* Header */}
+      <div className={styles.header}>
+        <h1 className={styles.headerTitle}>Study in Spain</h1>
+        <p className={styles.headerSubtitle}>Experience vibrant culture and academic excellence in the heart of Europe</p>
       </div>
-      <div className={Ukcss.section}>
-        <h2 style={{color: '#2d4a53'}}>How to Apply</h2>
-        <ol style={{marginLeft: '1.5rem', color: '#1a3c40'}}>
-          <li>Choose your course and institution</li>
-          <li>Prepare academic and language documents</li>
-          <li>Apply online through the university or via the Spanish National University for Distance Education (UNED)</li>
-          <li>Receive your admission letter and accept it</li>
-          <li>Apply for your Spanish student visa</li>
-        </ol>
+
+      {/* Hero Image */}
+      <img 
+        src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+        alt="Madrid University and Spanish architecture" 
+        className={styles.heroImage}
+        onError={(e) => {
+          e.target.src = "https://picsum.photos/1200/400?random=60";
+        }}
+      />
+
+      {/* Quick Stats */}
+      <div className={styles.quickStats}>
+        {stats.map((stat, index) => (
+          <div key={index} className={styles.statCard}>
+            <div className={styles.statNumber}>{stat.number}</div>
+            <div className={styles.statLabel}>{stat.label}</div>
+          </div>
+        ))}
       </div>
-      <div className={Ukcss.section}>
-        <h2 style={{color: '#2d4a53'}}>Why Apply to Spain?</h2>
-        <ul style={{marginLeft: '1.5rem', color: '#1a3c40'}}>
-          <li>High quality of education and research</li>
-          <li>Vibrant student life and international community</li>
-          <li>Opportunities for internships and work experience</li>
-          <li>Access to Spanish language and culture</li>
-          <li>Pathways to careers in Europe</li>
-        </ul>
+
+      {/* Benefits Section */}
+      <h2 className={styles.sectionTitle}>Why Choose Spain?</h2>
+      <div className={styles.benefitsGrid}>
+        {benefits.map((benefit, index) => (
+          <div key={index} className={styles.benefitCard}>
+            <div className={styles.benefitIcon}>{benefit.icon}</div>
+            <h3 className={styles.benefitTitle}>{benefit.title}</h3>
+            <p className={styles.benefitDescription}>{benefit.description}</p>
+          </div>
+        ))}
       </div>
-      <blockquote style={{margin: '2.5rem auto', maxWidth: 600, background: '#e6f0ee', borderLeft: '5px solid #1a3c40', borderRadius: 8, padding: '1.2rem 1rem', color: '#1a3c40', fontSize: '1.15rem', fontStyle: 'italic', textAlign: 'center'}}>
-        "We will guide you every step of the way to make your dream of studying in Spain a reality."
-      </blockquote>
-      <div className={Ukcss.section}>
-        <h2 style={{color: '#2d4a53'}}>Frequently Asked Questions</h2>
-        <ul style={{marginLeft: '1.5rem', color: '#1a3c40'}}>
-          <li><strong>Can I work while studying in Spain?</strong> Yes, international students can work up to 20 hours per week during their studies.</li>
-          <li><strong>Are scholarships available for international students?</strong> Many Spanish institutions and the government offer scholarships for international students.</li>
-          <li><strong>What is the cost of living in Spain?</strong> The cost varies by city, but students should budget for accommodation, food, transport, and personal expenses. On average, €7,000–€12,000 per year.</li>
-          <li><strong>Is health insurance required?</strong> Yes, health insurance is mandatory for all international students in Spain.</li>
-        </ul>
+
+      {/* Tabbed Information */}
+      <div className={styles.tabContainer}>
+        <div className={styles.tabButtons}>
+          {Object.keys(tabContent).map((tab) => (
+            <button
+              key={tab}
+              className={`${styles.tabButton} ${activeTab === tab ? styles.active : ''}`}
+              onClick={() => setActiveTab(tab)}
+            >
+              {tabContent[tab].title}
+            </button>
+          ))}
+        </div>
+        <div className={styles.tabContent}>
+          <h3>{tabContent[activeTab].title}</h3>
+          <ul>
+            {tabContent[activeTab].content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className={Ukcss.section}>
-        <h2 style={{color: '#2d4a53'}}>Contact Us for Personalized Guidance</h2>
-        <p style={{color: '#1a3c40', fontSize: '1.08rem'}}>Our experienced counselors are here to help you with every step of your application, from choosing the right course to preparing your visa documents. <br/>Reach out today and start your journey to Spain with confidence!</p>
+
+      {/* Image Gallery */}
+      <div className={styles.imageGallery}>
+        <h2 className={styles.sectionTitle}>Discover Spain</h2>
+        <div className={styles.galleryGrid}>
+          {galleryImages.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              className={styles.galleryImage}
+              onError={(e) => {
+                e.target.src = image.fallback;
+              }}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Testimonial */}
+      <div className={styles.testimonial}>
+        <p className={styles.testimonialText}>
+          "Studying in Spain has been the experience of a lifetime. The combination of excellent education, 
+          vibrant culture, and warm people has made this journey unforgettable."
+        </p>
+        <p className={styles.testimonialAuthor}>- Carlos M., International Student</p>
+      </div>
+
+      {/* FAQ Section */}
+      <div className={styles.faqSection}>
+        <h2 className={styles.sectionTitle}>Frequently Asked Questions</h2>
+        {faqs.map((faq, index) => (
+          <div key={index} className={styles.faqItem}>
+            <button
+              className={styles.faqQuestion}
+              onClick={() => setOpenFaq(openFaq === index ? null : index)}
+            >
+              {faq.question}
+              <span>{openFaq === index ? '−' : '+'}</span>
+            </button>
+            <div className={`${styles.faqAnswer} ${openFaq === index ? '' : styles.hidden}`}>
+              {faq.answer}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* CTA Section */}
+      <div className={styles.ctaSection}>
+        <h2 className={styles.ctaTitle}>Ready for Your Spanish Adventure?</h2>
+        <p className={styles.ctaDescription}>
+          Let our experienced counselors guide you through every step of your application to Spain
+        </p>
+        <button className={styles.ctaButton}>Get Expert Consultation</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Spain;

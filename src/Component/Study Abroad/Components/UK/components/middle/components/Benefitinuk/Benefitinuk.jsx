@@ -12,27 +12,23 @@ function Benefitinuk() {
   return (
     <div className={Benefit.container}>
     <div className={Benefit.text}>
-      <h1 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="true">Benefits of Studying in the Cyprus</h1>
-      <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true">Studying in Cyprus offers numerous benefits for international students. Here are some key advantages:</p>
+      <h1 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="true">Benefits of Studying in the United Kingdom</h1>
+      <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true">Studying in the UK offers numerous benefits for international students. Here are some key advantages:</p>
       <ul className={Benefit.ultext} data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-once="true">
-        <li ><strong>	High-Quality Education: </strong> Cypriot universities provide high academic standards and are recognized internationally. Many institutions follow the Bologna Process, ensuring that degrees are compatible across Europe. </li>
-        <li ><strong>	Affordable Tuition Fees:</strong>Compared to many Western countries, tuition fees in Cyprus are relatively low, making it an economical choice for students seeking quality education without high costs.</li>
-        <li><strong>	English-Taught Programs:</strong> Most universities offer programs in English, which is beneficial for international students who may not speak Greek or Turkish. This accessibility helps students focus on their studies without language barriers.</li>
-        <li> <strong>Cultural Diversity: </strong>  Cyprus is home to a diverse student population from various countries, fostering a multicultural environment that enriches the educational experience and promotes cultural exchange. </li>
-        <li> <strong> Safe Environment:</strong> Cyprus is known for its low crime rate and welcoming atmosphere, making it one of the safest countries in Europe for students to live and study. </li>
-        <li> <strong> 	Beautiful Climate and Scenery: </strong>With its Mediterranean climate, Cyprus enjoys warm weather and plenty of sunshine throughout the year. The island's stunning beaches and natural landscapes provide a pleasant backdrop for student life.  </li>
-        <li> <strong> 	Rich History and Culture: </strong> Students have the opportunity to explore Cyprus's rich history, archaeological sites, and cultural heritage, enhancing their overall experience while studying. </li>
-        <li> <strong> 	Post-Study Work Opportunities:  </strong>  Graduates may find opportunities to work in Cyprus after completing their studies, allowing them to gain valuable work experience in an international setting.</li>
-        <li> <strong> 	Strategic Location:  </strong> Situated at the crossroads of Europe, Asia, and Africa, Cyprus serves as a convenient base for travel to other countries, making it easy for students to explore different cultures during their studies. </li>
-        <li> <strong> 	Strategic Location:  </strong>  Universities in Cyprus often provide strong support services for international students, including orientation programs, academic advising, and assistance with accommodation.</li>
+        <li ><strong>World-Class Education: </strong> The UK is home to some of the world's oldest and most prestigious universities, including Oxford, Cambridge, and many others ranked globally in the top 100. </li>
+        <li ><strong>English Language Advantage:</strong>Study in the birthplace of the English language, providing an immersive environment for mastering academic and professional English.</li>
+        <li><strong>Shorter Course Duration:</strong> UK degrees can often be completed faster than in other countries - bachelor's in 3 years, master's in 1 year - saving time and money.</li>
+        <li> <strong>Research Excellence: </strong>  The UK is a global leader in research and innovation, offering students access to cutting-edge facilities and groundbreaking research opportunities. </li>
+        <li> <strong> Cultural Heritage:</strong> Immerse yourself in rich British culture, history, literature, and traditions while studying in this historically significant country. </li>
+        <li> <strong>  Global Recognition: </strong>UK qualifications are recognized and respected worldwide, providing excellent career prospects globally.  </li>
+        <li> <strong>  Diverse Student Community: </strong> Experience a multicultural environment with students from around the world, fostering global networks and friendships. </li>
+        <li> <strong>  Post-Study Work Opportunities:  </strong>  The UK offers post-study work visas allowing graduates to gain valuable work experience after completing their studies.</li>
+        <li> <strong>  Gateway to Europe:  </strong> The UK's location provides easy access to explore other European countries during study breaks. </li>
+        <li> <strong>  Innovation Hub:  </strong>  The UK is home to leading companies in finance, technology, creative industries, and scientific research, offering excellent internship and career opportunities.</li>
          </ul>
-      <p data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">In summary, studying in Cyprus combines high-quality education with affordability, safety, and a vibrant cultural experience, making it an attractive destination for students from around the world.
-
-
-</p>
-
+      <p data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">In summary, studying in the UK combines world-renowned education with cultural richness, research excellence, and global career opportunities in an English-speaking environment.</p>
     </div>
-    <p className={Benefit.imp} data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">Looking to gather more information about Applying to Study in the Cyprus and the array of advantages it can offer? Reach out to SunRays and schedule a FREE consultation today to delve deeper into the details</p>
+    <p className={Benefit.imp} data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">Looking to gather more information about Applying to Study in the United Kingdom and the array of advantages it can offer? Reach out to Global Education Consultancy and schedule a FREE consultation today to delve deeper into the details</p>
     </div>
   )
 }

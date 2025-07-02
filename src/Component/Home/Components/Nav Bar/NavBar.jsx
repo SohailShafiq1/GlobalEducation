@@ -34,6 +34,14 @@ const NavBar = () => {
       </div>
       <ul className={`${s["mainlinks"]} ${menuopen ? s["open"] : ""}`}
         style={menuopen && window.innerWidth <= 700 ? { width: "100vw", height: "100vh", background: "#F4F3EE", position: "fixed", top: 0, left: 0, zIndex: 9999, overflowY: "auto" } : {}}>
+        
+        {/* Cross button for mobile menu */}
+        {menuopen && window.innerWidth <= 700 && (
+          <div className={s["close-btn"]} onClick={() => setmenuopen(false)}>
+            <span>&times;</span>
+          </div>
+        )}
+        
         <li>
           <NavLink to="/" className={s["btn"]}>
             Home

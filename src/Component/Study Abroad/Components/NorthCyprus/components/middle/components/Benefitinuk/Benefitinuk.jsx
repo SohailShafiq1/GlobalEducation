@@ -12,27 +12,23 @@ function Benefitinuk() {
   return (
     <div className={Benefit.container}>
     <div className={Benefit.text}>
-      <h1 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="true">Benefits of Studying in the Cyprus</h1>
-      <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true">Studying in Cyprus offers numerous benefits for international students. Here are some key advantages:</p>
+      <h1 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="true">Benefits of Studying in North Cyprus</h1>
+      <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true">Studying in North Cyprus offers numerous benefits for international students. Here are some key advantages:</p>
       <ul className={Benefit.ultext} data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-once="true">
-        <li ><strong>	High-Quality Education: </strong> Cypriot universities provide high academic standards and are recognized internationally. Many institutions follow the Bologna Process, ensuring that degrees are compatible across Europe. </li>
-        <li ><strong>	Affordable Tuition Fees:</strong>Compared to many Western countries, tuition fees in Cyprus are relatively low, making it an economical choice for students seeking quality education without high costs.</li>
-        <li><strong>	English-Taught Programs:</strong> Most universities offer programs in English, which is beneficial for international students who may not speak Greek or Turkish. This accessibility helps students focus on their studies without language barriers.</li>
-        <li> <strong>Cultural Diversity: </strong>  Cyprus is home to a diverse student population from various countries, fostering a multicultural environment that enriches the educational experience and promotes cultural exchange. </li>
-        <li> <strong> Safe Environment:</strong> Cyprus is known for its low crime rate and welcoming atmosphere, making it one of the safest countries in Europe for students to live and study. </li>
-        <li> <strong> 	Beautiful Climate and Scenery: </strong>With its Mediterranean climate, Cyprus enjoys warm weather and plenty of sunshine throughout the year. The island's stunning beaches and natural landscapes provide a pleasant backdrop for student life.  </li>
-        <li> <strong> 	Rich History and Culture: </strong> Students have the opportunity to explore Cyprus's rich history, archaeological sites, and cultural heritage, enhancing their overall experience while studying. </li>
-        <li> <strong> 	Post-Study Work Opportunities:  </strong>  Graduates may find opportunities to work in Cyprus after completing their studies, allowing them to gain valuable work experience in an international setting.</li>
-        <li> <strong> 	Strategic Location:  </strong> Situated at the crossroads of Europe, Asia, and Africa, Cyprus serves as a convenient base for travel to other countries, making it easy for students to explore different cultures during their studies. </li>
-        <li> <strong> 	Strategic Location:  </strong>  Universities in Cyprus often provide strong support services for international students, including orientation programs, academic advising, and assistance with accommodation.</li>
+        <li ><strong>Affordable Education: </strong> North Cyprus offers high-quality education at very competitive tuition fees and living costs, making it accessible for students from all economic backgrounds. </li>
+        <li ><strong>English-Taught Programs:</strong>Most universities offer programs taught in English, eliminating language barriers for international students.</li>
+        <li><strong>European-Standard Education:</strong> Universities follow European credit transfer systems and maintain high academic standards with international recognition.</li>
+        <li> <strong>Beautiful Mediterranean Setting: </strong>  Study in a stunning island environment with beautiful beaches, historic sites, and pleasant Mediterranean climate year-round. </li>
+        <li> <strong> Safe Environment:</strong> North Cyprus maintains very low crime rates and offers a safe, peaceful environment for students. </li>
+        <li> <strong>  Cultural Diversity: </strong>The region welcomes students from around the world, creating a multicultural educational environment.  </li>
+        <li> <strong>  Rich History: </strong> Explore thousands of years of history, from ancient ruins to medieval castles, while studying. </li>
+        <li> <strong>  Modern Facilities:  </strong>  Universities offer state-of-the-art facilities, modern campuses, and excellent student services.</li>
+        <li> <strong>  Easy Admission Process:  </strong> Simplified admission procedures and flexible entry requirements make it easier for international students to apply. </li>
+        <li> <strong>  Gateway to Europe and Middle East:  </strong>  Strategic location provides easy access to explore both European and Middle Eastern cultures.</li>
          </ul>
-      <p data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">In summary, studying in Cyprus combines high-quality education with affordability, safety, and a vibrant cultural experience, making it an attractive destination for students from around the world.
-
-
-</p>
-
+      <p data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">In summary, studying in North Cyprus combines affordable, quality education with beautiful Mediterranean lifestyle, safety, and cultural richness, making it an excellent choice for international students.</p>
     </div>
-    <p className={Benefit.imp} data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">Looking to gather more information about Applying to Study in the Cyprus and the array of advantages it can offer? Reach out to SunRays and schedule a FREE consultation today to delve deeper into the details</p>
+    <p className={Benefit.imp} data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">Looking to gather more information about Applying to Study in North Cyprus and the array of advantages it can offer? Reach out to Global Education Consultancy and schedule a FREE consultation today to delve deeper into the details</p>
     </div>
   )
 }

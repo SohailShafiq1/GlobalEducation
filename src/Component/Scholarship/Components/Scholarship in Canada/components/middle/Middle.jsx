@@ -161,7 +161,7 @@ function Middle() {
                 {table1.map((table, index) => (
                 <Table key={index} headings={table.headings} rows={table.rows} />
                 ))}
-                <h2 data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">How about contacting SunRays counsellors to get details of scholarship application deadlines and everything else?</h2>
+                <h2 data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">How about contacting Global Education Consultancy counsellors to get details of scholarship application deadlines and everything else?</h2>
            </div>
         </div>
 

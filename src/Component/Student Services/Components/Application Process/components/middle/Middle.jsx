@@ -19,7 +19,7 @@ function Front() {
                 </h2>
                 <p data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-once="true">Our focus is student's priority and preferences. Based on your academic records and other entry requisites, our counsellor will assist you in shortlisting the institutions and courses in which you are eligible to apply. The list of documents and other requisites can be obtained from our counsellor for applying to the universities you have shortlisted.
                     <br />
-                    Once a complete application along with required documents is submitted to your counsellor at AECC Global, you can be assured of its submission within 24-48 hours.
+                    Once a complete application along with required documents is submitted to your counsellor at Global Education Consultancy, you can be assured of its submission within 24-48 hours.
                     <br />
                     Student applications are usually assessed based on the different parameters like academic excellence, English language ability etc. Application processing time varies from institution to institution and ranges between 2-8 weeks upon submission of an application.
                 </p>

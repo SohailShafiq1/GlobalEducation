@@ -1,0 +1,991 @@
+/* Canada Study Abroad Page Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Section */
+.headerSection {
+  text-align: center;
+  padding: 80px 0 60px;
+  background: linear-gradient(135deg, #FF0000 0%, #FFFFFF 50%, #FF0000 100%);
+  color: #333;
+  margin: 0 -20px 60px;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.headerSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,0,0,0.8) 0%, rgba(255,255,255,0.9) 50%, rgba(255,0,0,0.8) 100%);
+  z-index: 1;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 2;
+}
+
+.flag {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  color: #d2001f;
+}
+
+.subheading {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+  color: #333;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Stats Section */
+.statsSection {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  margin: 0 -20px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Quick Stats */
+.quickStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.statCard {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(210, 0, 31, 0.1);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(210, 0, 31, 0.15);
+}
+
+.statIcon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.statValue {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #d2001f;
+  margin-bottom: 10px;
+}
+
+.statLabel {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Overview Section */
+.overviewSection {
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #d2001f;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #d2001f, #ff6b8a);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.overviewGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.overviewContent {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.overviewText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.highlightsList {
+  list-style: none;
+  padding: 0;
+}
+
+.highlightItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.highlightItem:last-child {
+  border-bottom: none;
+}
+
+.highlightIcon {
+  color: #d2001f;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.overviewImage {
+  background: url('https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=600&h=400&fit=crop') center/cover;
+  border-radius: 20px;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: white;
+  padding: 30px;
+}
+
+.imageCaption {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Benefits Section */
+.benefitsSection {
+  background: #f8f9fa;
+  padding: 80px 40px;
+  margin: 0 -20px 80px;
+  border-radius: 20px;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.benefitCard {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(210, 0, 31, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.benefitCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(210, 0, 31, 0.15);
+}
+
+.benefitIcon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.benefitTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #d2001f;
+}
+
+.benefitDescription {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Tab System */
+.tabsSection {
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.tabButtons {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 40px;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.tabButton {
+  background: none;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+
+.tabButton:hover {
+  color: #d2001f;
+  background-color: rgba(210, 0, 31, 0.05);
+}
+
+.activeTab {
+  color: #d2001f !important;
+  border-bottom-color: #d2001f !important;
+  background-color: rgba(210, 0, 31, 0.05);
+}
+
+.tabContent {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.tabContent h3 {
+  color: #d2001f;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.tabContent h4 {
+  color: #333;
+  margin: 25px 0 15px;
+  font-size: 1.2rem;
+}
+
+.tabContent ul, .tabContent ol {
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+.tabContent li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.universitiesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.universityCard {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #d2001f;
+}
+
+.universityCard h4 {
+  color: #d2001f;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.ranking {
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.specialties {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 40px;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: #d2001f;
+  background: rgba(210, 0, 31, 0.05);
+}
+
+.activeTab {
+  color: #d2001f !important;
+  border-bottom-color: #d2001f !important;
+  background: rgba(210, 0, 31, 0.1) !important;
+}
+
+.tabContent {
+  min-height: 400px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Requirements Content */
+.requirementsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.requirementCategory {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.categoryTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #d2001f;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.categoryIcon {
+  font-size: 1.5rem;
+}
+
+.requirementsList {
+  list-style: none;
+  padding: 0;
+}
+
+.requirementItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.95rem;
+}
+
+.requirementItem:last-child {
+  border-bottom: none;
+}
+
+.checkmark {
+  color: #4caf50;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Process Steps */
+.processSteps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.processStep {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.processStep:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(210, 0, 31, 0.15);
+}
+
+.stepNumber {
+  background: linear-gradient(135deg, #d2001f 0%, #ff6b8a 100%);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0 auto 20px;
+}
+
+.stepTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d2001f;
+  margin-bottom: 15px;
+}
+
+.stepDescription {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Universities Grid */
+.universitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.universityCard {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.universityCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(210, 0, 31, 0.15);
+}
+
+.universityImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.universityContent {
+  padding: 25px;
+}
+
+.universityName {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #d2001f;
+  margin-bottom: 10px;
+}
+
+.universityRank {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.universityDescription {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.universityPrograms {
+  background: #fff5f5;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #666;
+  border-left: 3px solid #d2001f;
+}
+
+/* Cost Breakdown */
+.costBreakdown {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.costTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #d2001f;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.costItems {
+  display: grid;
+  gap: 15px;
+}
+
+.costItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #d2001f;
+}
+
+.costLabel {
+  font-weight: 600;
+  color: #333;
+}
+
+.costValue {
+  color: #d2001f;
+  font-weight: 700;
+}
+
+/* Testimonial Section */
+.testimonialSection {
+  background: linear-gradient(135deg, #d2001f, #ff6b8a);
+  color: white;
+  padding: 60px 40px;
+  margin: 80px -20px 60px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 800px;
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.testimonial p {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.testimonial cite {
+  font-style: normal;
+  font-weight: 600;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+/* FAQ Section */
+.faqSection {
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.faqList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: 1px solid #f0f0f0;
+  overflow: hidden;
+}
+
+.faqQuestion {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 25px 30px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #d2001f;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.faqQuestion:hover {
+  background: rgba(210, 0, 31, 0.05);
+}
+
+.faqIcon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.faqItem.expanded .faqIcon {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  padding: 0 30px 25px;
+  color: #666;
+  line-height: 1.7;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Gallery Section */
+.gallerySection {
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.gallerySection h2 {
+  text-align: center;
+  color: #d2001f;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.imageGrid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.imageGrid img:hover {
+  transform: scale(1.02);
+}
+
+.galleryLink {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.galleryLink a {
+  color: #d2001f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.galleryLink a:hover {
+  color: #a5001b;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.galleryItem {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 250px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galleryItem:hover {
+  transform: scale(1.02);
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galleryOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.galleryItem:hover .galleryOverlay {
+  transform: translateY(0);
+}
+
+.galleryCaption {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Contact Section */
+.contactSection {
+  background: linear-gradient(135deg, #d2001f 0%, #ff6b8a 100%);
+  color: white;
+  padding: 80px 40px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 -20px 40px;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.ctaText {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactButtons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryBtn, .secondaryBtn {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.primaryBtn {
+  background: white;
+  color: #d2001f;
+}
+
+.primaryBtn:hover {
+  background: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondaryBtn:hover {
+  background: white;
+  color: #d2001f;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .heading {
+    font-size: 2rem;
+  }
+  
+  .subheading {
+    font-size: 1.1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .quickStats {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .overviewGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .tabs {
+    flex-direction: column;
+  }
+  
+  .tab {
+    padding: 12px 20px;
+    text-align: center;
+  }
+  
+  .requirementsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .processSteps {
+    grid-template-columns: 1fr;
+  }
+  
+  .universitiesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .galleryGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .contactButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ctaTitle {
+    font-size: 2rem;
+  }
+  
+  .headerSection {
+    padding: 60px 20px 40px;
+    margin: 0 -15px 40px;
+  }
+  
+  .benefitsSection {
+    padding: 60px 20px;
+    margin: 0 -15px 60px;
+  }
+  
+  .contactSection {
+    padding: 60px 20px;
+    margin: 0 -15px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flag {
+    font-size: 3rem;
+  }
+  
+  .statCard {
+    padding: 20px 15px;
+  }
+  
+  .overviewContent {
+    padding: 30px 20px;
+  }
+  
+  .benefitCard {
+    padding: 30px 20px;
+  }
+  
+  .processStep {
+    padding: 25px 20px;
+  }
+  
+  .universityContent {
+    padding: 20px;
+  }
+  
+  .faqQuestion {
+    padding: 20px 25px;
+  }
+  
+  .faqAnswer {
+    padding: 0 25px 20px;
+  }
+}

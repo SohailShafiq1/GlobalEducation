@@ -189,8 +189,8 @@ function Middle() {
         {table6.map((table, index) => (
           <Table key={index} headings={table.headings} rows={table.rows} />
         ))}
-        <h2 data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">These basic steps can prove to be effective to ensure you get to live the best experience whilst your time of Study in the UK. Need more information? Feel free to Connect with AECC - Your Study Abroad Expert,Today!</h2>
-        <h3 data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true"><br />Studying abroad can be difficult. Simplify it with Aecc!</h3>
+        <h2 data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true">These basic steps can prove to be effective to ensure you get to live the best experience whilst your time of Study in Georgia. Need more information? Feel free to Connect with Global Education Consultancy - Your Study Abroad Expert, Today!</h2>
+        <h3 data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true"><br />Studying abroad can be difficult. Simplify it with Global Education Consultancy!</h3>
       </div>
 
 

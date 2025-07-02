@@ -1,164 +1,541 @@
-/* VisitVisa.module.css */
+/* VisitVisa.module.css - Professional Consultancy Design */
 
 .container {
-  background: #f4f3ee;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  padding: 2rem 2.5rem;
-  margin: 2rem auto;
-  max-width: 700px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+/* Header Section */
+.headerSection {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.headerSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.1;
 }
 
 .heading {
-  color: #1a3c40;
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subheading {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  font-weight: 300;
+  position: relative;
+}
+
+/* Services Overview */
+.servicesOverview {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  position: relative;
 }
 
-.countryList {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2rem 0;
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  border-radius: 2px;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.serviceCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.serviceIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.serviceCard h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.serviceCard p {
+  color: #5a6c7d;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Why Choose Us Section */
+.whyChooseUs {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.whyChooseUs .sectionTitle {
+  color: white;
+}
+
+.whyChooseUs .sectionTitle::after {
+  background: white;
+}
+
+.benefitsList {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.benefit {
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 1rem;
-  justify-content: center;
+  background: rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
 }
 
-.countryItem {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 0.75rem 1.5rem;
+.benefitIcon {
+  font-size: 2rem;
+  margin-top: 0.2rem;
+}
+
+.benefit h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.benefit p {
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* Country Selection */
+.countrySelection {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.selectionSubtext {
+  text-align: center;
   font-size: 1.1rem;
-  color: #1a3c40;
-  font-weight: 600;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-  transition: background 0.2s, color 0.2s;
+  color: #5a6c7d;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.countryItem:hover {
-  background: #e6f0ee;
-  color: #0e2326;
+.countryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.explanation {
-  margin-bottom: 2rem;
-  color: #2d4a53;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  background: #f8f9fa;
-  border-radius: 8px;
-  padding: 1.2rem 1rem;
-}
-
-.introBox {
-  background: #e6f0ee;
-  border-left: 5px solid #1a3c40;
-  border-radius: 8px;
-  padding: 1.2rem 1rem;
-  margin-bottom: 2rem;
-  color: #1a3c40;
-  font-size: 1.08rem;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-}
-
-.countryBtn {
-  background: #1a3c40;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 0.6rem 1.2rem;
-  font-size: 1.05rem;
-  font-weight: 600;
+.countryCard {
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.countryBtn:hover, .countryBtn:focus {
-  background: #2d4a53;
-  color: #e6f0ee;
-  outline: none;
+.countryCard:hover {
+  transform: translateY(-3px);
+  border-color: #3498db;
+  box-shadow: 0 15px 35px rgba(52, 152, 219, 0.2);
+}
+
+.flag {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.countryName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.viewDetails {
+  font-size: 0.9rem;
+  color: #3498db;
+  font-weight: 500;
+}
+
+/* Country Details */
+.countryDetails {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .countrySection {
-  margin-bottom: 2.5rem;
+  background: white;
+  margin-bottom: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+  scroll-margin-top: 100px;
+}
+
+.countryHeader {
+  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.countryFlag {
+  font-size: 3rem;
+}
+
+.countryTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.countryDescription {
+  padding: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #5a6c7d;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Tabs */
+.tabContainer {
+  padding: 0;
+}
+
+.tabs {
+  display: flex;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.tab {
+  flex: 1;
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5a6c7d;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tab:hover {
+  background: #e9ecef;
+  color: #2c3e50;
+}
+
+.activeTab {
+  background: white;
+  color: #3498db;
+  border-bottom-color: #3498db;
+}
+
+.tabContent {
+  padding: 2rem;
+}
+
+/* Tab Content Styles */
+.overviewContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.visaInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.infoItem {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.infoItem strong {
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.highlights {
+  background: linear-gradient(135deg, #e8f6ff 0%, #d6edff 100%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #b3d9ff;
+}
+
+.highlights h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.requirementsList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.requirementItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #27ae60;
+}
+
+.checkmark {
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0.1rem;
+}
+
+.processList {
+  list-style: none;
+  padding: 0;
+  counter-reset: step-counter;
+}
+
+.processStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
   background: #f8f9fa;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  padding: 1.5rem 1.2rem;
-  scroll-margin-top: 90px;
+  border-left: 4px solid #3498db;
+  counter-increment: step-counter;
 }
 
-.countrySummary {
-  color: #2d4a53;
-  font-size: 1.08rem;
-  margin-bottom: 0.7rem;
+.stepNumber {
+  background: #3498db;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
 }
 
-.detailsLabel {
-  display: block;
-  font-size: 1.08rem;
-  font-weight: 700;
-  color: #0e2326;
-  margin-bottom: 0.4rem;
-  letter-spacing: 0.5px;
+.stepText {
+  line-height: 1.6;
+  color: #2c3e50;
 }
 
-.countryDetails {
-  background: linear-gradient(90deg, #e6f0ee 0%, #fff 100%);
-  border-left: 5px solid #1a3c40;
+/* Contact Section */
+.contactSection {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-top: 3rem;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ctaText {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryBtn, .secondaryBtn {
+  padding: 1rem 2rem;
+  border: none;
   border-radius: 8px;
-  padding: 1.2rem 1rem 1rem 1.3rem;
-  font-size: 1.08rem;
-  color: #1a3c40;
-  white-space: pre-line;
-  margin-bottom: 0.2rem;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  transition: box-shadow 0.2s;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.countryDetails:hover {
-  box-shadow: 0 4px 16px rgba(26,60,64,0.10);
-  background: linear-gradient(90deg, #f4f3ee 0%, #e6f0ee 100%);
+.primaryBtn {
+  background: #3498db;
+  color: white;
 }
 
-@media (max-width: 600px) {
-  .container {
-    padding: 1rem 0.5rem;
-    max-width: 98vw;
-  }
+.primaryBtn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondaryBtn:hover {
+  background: white;
+  color: #2c3e50;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .heading {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
   }
-  .countryItem {
-    font-size: 0.95rem;
-    padding: 0.5rem 0.8rem;
+  
+  .subheading {
+    font-size: 1.1rem;
   }
+  
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .countryGrid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  
+  .tabs {
+    flex-direction: column;
+  }
+  
+  .tab {
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .activeTab {
+    border-left: 4px solid #3498db;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .visaInfo {
+    grid-template-columns: 1fr;
+  }
+  
+  .contactButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .headerSection {
+    padding: 3rem 1rem 2rem;
+  }
+  
+  .servicesOverview,
+  .countrySelection,
   .countryDetails {
-    font-size: 0.95rem;
-    padding: 0.7rem 0.5rem 0.7rem 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  .introBox {
-    font-size: 0.98rem;
-    padding: 0.7rem 0.5rem;
+  
+  .countryHeader {
+    padding: 1.5rem;
   }
-  .countryBtn {
-    font-size: 0.92rem;
-    padding: 0.4rem 0.7rem;
-  }
-  .countrySection {
-    padding: 0.8rem 0.3rem;
-  }
-  .countrySummary {
-    font-size: 0.97rem;
-  }
-  .countryDetails {
-    font-size: 0.93rem;
-    padding: 0.6rem 0.3rem;
+  
+  .countryDescription,
+  .tabContent {
+    padding: 1.5rem;
   }
 }

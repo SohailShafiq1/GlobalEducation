@@ -24,7 +24,7 @@ const Solution = () => {
           critical decision you will ever make in your life. We’ve developed
           strong working relationships with our university partners and offer
           scholarships to deserving students to help offset their costs of
-          studying overseas. Choosing AECC Global as your international study
+          studying overseas. Choosing Global Education Consultancy as your international study
           partner means you can focus on planning your overseas education and
           career while we take care of all the paperwork.
         </p>

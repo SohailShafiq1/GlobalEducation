@@ -17,7 +17,7 @@ function Front() {
             <h1 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-once="true">Build the perfect applications for your target universities
             </h1>
               <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="true">
-              AECC Global provides end-to-end guidance and consultation services for overseas admissions.
+              Global Education Consultancy provides end-to-end guidance and consultation services for overseas admissions.
               <br />
               We have a tremendous track record of successfully sending the students abroad.
               </p>
